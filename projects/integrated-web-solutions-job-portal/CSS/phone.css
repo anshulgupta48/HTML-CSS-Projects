@@ -1,0 +1,52 @@
+/* Navbar Section ( For Maximum Width 750px ) */
+#image {
+    text-align: center;
+    margin: 0% 35%;
+}
+
+#image img {
+    width: 80%;
+}
+
+#title {
+    display: none;
+}
+
+#right {
+    display: none;
+}
+
+
+/* Job Section ( For Maximum Width 750px ) */
+#job {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+
+/* Form Section ( For Maximum Width 750px ) */
+#form h1 {
+    font-size: 25px;
+}
+
+#main-form {
+    width: 70%;
+}
+
+.btn button {
+    margin: 5px 15px;
+}
+
+
+/* Contact Section ( For Maximum Width 750px ) */
+#contact h4 {
+    font-size: 20px;
+}
+
+
+/* Footer Section ( For Maximum Width 750px ) */
+#footer {
+    font-size: 17px;
+}
