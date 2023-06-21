@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebZilla - Providing Paid Courses for Free</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- <======== Navbar Section ========> -->
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WebZilla</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Courses</a></li>
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#footer">NewsLetter</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="mx-2">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- <======== Login-Modal Section ========> -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Login to WebZilla</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control mt-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="my-2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check my-4">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Logout From Other Devices</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <======== SignUp-Modal Section ========> -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <h1 class="fw-bold mb-0 fs-3">Create a WebZilla Account</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Confirm Password">
+                                <label for="floatingPassword">Confirm Password</label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                            <hr class="my-4">
+                            <h2 class="fs-5 fw-bold mb-3 text-center">OR</h2>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                                <svg class="bi me-1" width="16" height="16">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                                Sign up with Twitter
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                <svg class="bi me-1" width="16" height="16">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                                Sign up with Facebook
+                            </button>
+                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                                <svg class="bi me-1" width="16" height="16">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+                                Sign up with GitHub
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <======== About Section ========> -->
+    <div class="about mx-5">
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 text-center">All About WebZilla</h2>
+                <p class="lead mt-4">WebZilla is an Online Blog Website Where You Can Find Best Courses to UpSkill
+                    YourSelf. The Aim of WebZilla is to UpSkill all the Students by Providing them Best Resouces for
+                    Free.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="Assets/about-1.jpg" alt="About-1" class="Assets-fluid">
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1 text-center">Story of WebZilla</h2>
+                <p class="lead mt-4">We Started WebZilla in 2019. At that Time, Students Prefer Offline Courses Rather
+                    than Online Courses but then COVID-19 Came and All Offline Centers became Closed as per Govt.
+                    Guidlines and then our Journey Starts. A Lot of Students Come in our Website to Find the Best Course
+                    According to their Interest and Within 2 Years, We Have Crossed 1 Million Users. WebZilla became
+                    More Famous because We Provide Paid Courses with 100% Discount Coupon Codes by Which Students get
+                    the Course for Free.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="Assets/about-2.jpg" alt="About-2" class="Assets-fluid">
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 text-center">Online Courses vs Offline Courses</h2>
+                <p class="lead mt-4">Online Courses Contains a Lot of Animation by Which it became Easy to Understand
+                    for the Students While Offline Courses Contains a White Board only Where Teacher is Explaining the
+                    Concept. Online Courses are Much Better because If we miss a Class then There will be a Recorded
+                    Session but in Offline Centers our that Class is Completely Missed and Now No One Take Care of that
+                    Concept Until Revision Session Comes. By Using WebZilla, You Can get a Lot of Online Courses for
+                    Free with Life-Time Access but Offline Coaching Centres Asked a Lot of Fee for that 6 - 8 Month
+                    Courses</p>
+            </div>
+            <div class="col-md-5">
+                <img src="Assets/about-3.jpg" alt="About-3" class="Assets-fluid">
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1 text-center">What About Placements or Internships</h2>
+                <p class="lead mt-4">Hey Buddy, Did You Know WebZilla Offers a Lot of Paid Courses for Free but What
+                    About Placements or Internships Mate :(</p>
+                <p class="lead">WebZilla is Currently Working on this Field. In Upcoming 8 - 10 Months, WebZilla will
+                    Provide all Information Related to New Jobs or Internships for Free. We only Provide Information of
+                    those Jobs or Internships Where Everyone Can Apply, No Particular Bachelor Degree Required, No CGPA
+                    Required, You will be Selected on the Basis of Your Skills only.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="Assets/about-4.jpg" alt="About-4" class="Assets-fluid">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <======== Footer Section ========> -->
+    <div id="footer" class="mt-5">
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md mx-4 mb-4">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="#">Education</a></li>
+                            <li><a class="link-secondary" href="#">Technology</a></li>
+                            <li><a class="link-secondary" href="#">Coding</a></li>
+                            <li><a class="link-secondary" href="#">Business</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md mx-4 mb-4">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="#">Team</a></li>
+                            <li><a class="link-secondary" href="#">Locations</a></li>
+                            <li><a class="link-secondary" href="#">Privacy</a></li>
+                            <li><a class="link-secondary" href="#">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md mx-4 mb-4">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="link-secondary" href="index.html">Home</a></li>
+                            <li><a class="link-secondary" href="about.html">About</a></li>
+                            <li><a class="link-secondary" href="contact.html">Contact</a></li>
+                            <li><a class="link-secondary" href="#">Login</a></li>
+                            <li><a class="link-secondary" href="#">SignUp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-2 mb-3">
+                        <form>
+                            <h5 class="text-center">Subscribe to our NewsLetter</h5>
+                            <p>Monthly Digest of what's New and Exciting Courses Launched.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="container">
+            <footer>
+                <hr>
+                <p class="text-center text-muted">Copyright &copy; 2023 WebZilla | All Rights Reserved</p>
+                <hr>
+                <p class="text-center text-muted">Design & Developed by Anshul Gupta</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
